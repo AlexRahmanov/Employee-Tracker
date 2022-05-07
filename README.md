@@ -42,5 +42,5 @@ THEN I am prompted to select an employee to update and their new role and this i
 * npm i express mysql2
 * npm i jest
 
-[Untitled_ May 7, 2022 1_54 PM.zip](https://github.com/AlexRahmanov/Employee-Tracker/files/8645722/Untitled_.May.7.2022.1_54.PM.zip)
+![Untitled_ May 7, 2022 1_54 PM](https://user-images.githubusercontent.com/86209350/167266897-32f90256-df46-49cc-81ed-f2b36f0cce94.gif)
 
