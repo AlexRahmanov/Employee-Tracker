@@ -42,4 +42,5 @@ THEN I am prompted to select an employee to update and their new role and this i
 * npm i express mysql2
 * npm i jest
 
-https://www.veed.io/view/156bb20e-d200-4079-9107-63ffa205713e?sharingWidget=true
+[Untitled_ May 7, 2022 1_54 PM.zip](https://github.com/AlexRahmanov/Employee-Tracker/files/8645722/Untitled_.May.7.2022.1_54.PM.zip)
+
