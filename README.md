@@ -1,14 +1,14 @@
 # Employee-Tracker
 
-# Description
+# Description:
 Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called content management systems (CMS). Your assignment this week is to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
-# User Story
+# User Story:
 AS A business owner
 I WANT to be able to view and manage the departments, roles, and employees in my company
 SO THAT I can organize and plan my business
 
-# Acceptance Criteria
+# Acceptance Criteria:
 GIVEN a command-line application that accepts user input
 WHEN I start the application
 THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
@@ -27,13 +27,13 @@ THEN I am prompted to enter the employee’s first name, last name, role, and ma
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 
-# Powered By
+# Powered By:
 * MySQL
 * Express.js
 * Javascript
 * Node.js
 
-# Packages Installed
+# Packages Installed:
 * npm i mysql2
 * npm i node
 * npm i dotenv
@@ -42,5 +42,6 @@ THEN I am prompted to select an employee to update and their new role and this i
 * npm i express mysql2
 * npm i jest
 
+# Mock-Up:
 ![Untitled_ May 7, 2022 1_54 PM](https://user-images.githubusercontent.com/86209350/167266897-32f90256-df46-49cc-81ed-f2b36f0cce94.gif)
 
