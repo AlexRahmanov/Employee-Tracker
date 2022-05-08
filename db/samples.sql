@@ -1,3 +1,4 @@
+/* employee info */
 SELECT
 employee.id,
 name,

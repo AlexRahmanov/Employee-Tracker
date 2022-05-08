@@ -1,3 +1,4 @@
+/* insert info */
 INSERT INTO department (dept_name)
 VALUES 
 ('City Hall'),

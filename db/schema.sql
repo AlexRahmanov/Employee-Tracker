@@ -1,3 +1,4 @@
+/* delete table */
 DROP DATABASE IF EXISTS ;
 CREATE DATABASE Employee_Tracker_db;
 USE Employee_Tracker_db;
@@ -6,6 +7,7 @@ DROP TABLE IF EXISTS department;
 DROP TABLE IF EXISTS job;
 DROP TABLE IF EXISTS employee;
 
+/* create table */
 CREATE TABLE department (
   id INT PRIMARY KEY AUTO_INCREMENT,
   dept_name VARCHAR(30) NOT NULL

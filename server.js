@@ -2,6 +2,7 @@ const mysql = require('mysql2');
 const inquirer = require('inquirer');
 const cTable = require('console.table');
 
+//localhost with .env hide password and user
 require("dotenv").config();
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -11,12 +12,14 @@ const connection = mysql.createConnection({
   database: 'Employee_Tracker_db',
 });
 
+//connection to app
 connection.connect(err => {
   if (err) throw err;
   console.log("WELCOME TO EMPLOYEE TRACKER APP");
   startMenu();
 });
 
+//display the menu list
 const startMenu = () => {
   inquirer.prompt({
       message: 'What would you like to do today?',
@@ -65,6 +68,7 @@ const startMenu = () => {
     });
 };
 
+//select from department
 const viewDepartment = () => {
   connection.query('SELECT * FROM department', function (err, res) {
     if (err) throw err;
@@ -73,6 +77,7 @@ const viewDepartment = () => {
   });
 };
 
+//select from job
 const viewJobs = () => {
   connection.query('SELECT * FROM job', function (err, res) {
     if (err) throw err;
@@ -81,6 +86,7 @@ const viewJobs = () => {
   });
 };
 
+//view employee info
 const viewEmployees = () => {
   connection.query(
     'SELECT employee.id, first_name, last_name, title, salary, dept_name, manager_id FROM ((department JOIN job ON department.id = job.department_id) JOIN employee ON job.id = employee.job_id);',
@@ -92,6 +98,7 @@ const viewEmployees = () => {
   );
 };
 
+//input for department
 const addDepartment = () => {
   inquirer.prompt([
       {
@@ -113,6 +120,7 @@ const addDepartment = () => {
     });
 };
 
+//input job title, salary and id
 const addJob = () => {
   inquirer.prompt([
       {
@@ -144,6 +152,7 @@ const addJob = () => {
     });
 };
 
+// add employee to the list
 const addEmployee = () => {
   inquirer.prompt([
       {
@@ -180,6 +189,7 @@ const addEmployee = () => {
     });
 };
 
+//update employee info
 const updateEmployee = () => {
   inquirer
     .prompt([
